@@ -30,8 +30,6 @@ Used for tracking and modeling Ethereum transaction behavior, including the foll
 
 ### **📂 code_ad_eth**
 
-针对以太坊交易行为的异常检测模块：
-
 For anomaly detection in Ethereum transaction behavior:
 
 - **`preprocessing.py`**  
@@ -91,7 +89,7 @@ class TGNN(nn.Module):
         self.lstm = nn.LSTM(hidden_channels, hidden_channels, batch_first=True)
 
     def forward(self, data):
-        # 时间卷积与节点特征学习
+    # Temporal convolution and node feature learning
         temporal_features = torch.stack([data.x[t] for t in range(self.temporal_steps)], dim=2)
         enhanced_features = self.temporal_conv(temporal_features)
         node_features = []
@@ -108,13 +106,13 @@ class TGNN(nn.Module):
 
 Please ensure the following dependencies are installed:
 
-| **工具/库**     | **版本**  |
-|--------------|---------|
-| Python       | >= 3.8  |
-| PyTorch      | >= 1.10 |
-| pandas       | >= 1.3  |
-| numpy        | >= 1.21 |
-| scikit-learn | >= 0.24 |
+| **Tool/Library** | **Version** |
+|------------------|-------------|
+| Python           | >= 3.8      |
+| PyTorch          | >= 1.10     |
+| pandas           | >= 1.3      |
+| numpy            | >= 1.21     |
+| scikit-learn     | >= 0.24     |
 
 Install dependencies:
 
@@ -133,22 +131,26 @@ Please place the downloaded dataset in the data/ folder of the project.
 In the proposed method, we compare two types of experimental results: performance comparison of anomaly detection
 methods and performance comparison of link prediction methods. The experimental results are shown below:
 
-### 1️⃣ 异常检测方法的性能对比
+### 1️⃣ Performance Comparison of Anomaly Detection Methods
 
-我们的方法与其他基于特征学习和图学习的方法进行了对比，主要评价指标为 **Accuracy** 和 **F1-score**
-。结果显示，我们的方法在所有指标上均优于其他方法。
+Our method is compared with other feature learning and graph learning-based methods, with the main evaluation metrics
+being Accuracy and F1-score. The results show that our method outperforms all other methods in all metrics.
 
-![异常检测方法性能对比](./image/image2.jpg)
+Performance Comparison of Anomaly Detection Methods
 
-**表1 异常检测方法的性能表现对比**
+![Performance Comparison of Anomaly Detection Methods](./image/image2.jpg)
 
-- **基于特征学习的方法**：包括 SVM 和 MLP，展示了较强的性能，但不如图学习方法。
-- **基于图学习的方法**：包括 GCN、GAT、GraphSAGE 等方法，性能进一步提升。
-- **Proposed Method** 的表现优异，**Accuracy** 和 **F1-score** 分别达到 **0.921** 和 **0.924**。
+**Table 1 Performance Comparison of Anomaly Detection Methods**
+
+- **Feature Learning-Based Methods**: Including SVM and MLP, which exhibit strong performance but are inferior to graph
+  learning methods.。
+- **Graph Learning-Based Methods**：Including GCN, GAT, GraphSAGE, etc., which further improve performance.。
+- **Proposed Method**  Achieves outstanding performance，with **Accuracy** 和 **F1-score** reaching **0.921** 和 **0.924
+  **,respectively。
 
 ---
 
-### 2️⃣ 链路预测方法的性能对比
+### 2️⃣ Performance Comparison of Link Prediction Methods
 
 Our method achieves optimal performance in link prediction on various Ethereum datasets, with evaluation metrics being
 AUC, Acc, and F1.。
@@ -164,16 +166,16 @@ AUC, Acc, and F1.。
 
 ---
 
-### Contact the Author
+### Conclusion
 
 Through the experiments above, our method excels in both anomaly detection and link prediction tasks, proving its
 effectiveness and robustness in regulating blockchain transaction behaviors.
 
-## 📬联系作者
+## 📬Contact the Author
 
 If you have any questions or collaboration intentions, please contact the author via:
 
-- **邮箱**：<shimianhua@std.uestc.edu.cn>
+- **Email**：<shimianhua@std.uestc.edu.cn>
 
 ## 📄 License
 

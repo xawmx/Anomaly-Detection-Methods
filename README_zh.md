@@ -162,7 +162,7 @@ pip install -r requirements.txt
 
 如果您有任何问题或合作意向，请通过以下方式联系作者：
 
-- **邮箱**：<zhangyin123@uestc.edu.cn>
+- **邮箱**：<shimianhua@std.uestc.edu.cn>
 
 ## 📄 许可证
 
