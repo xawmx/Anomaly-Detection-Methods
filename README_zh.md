@@ -175,6 +175,6 @@ pip install -r requirements.txt
 - **署名要求**：需要在分发时附带原始许可证文本。
 - **免责条款**：对使用本项目产生的问题，作者不承担任何责任。
 
-点击查看完整许可证文本：[LICENSE](./LICENSE)
+点击查看完整许可证文本：[LICENSE](LICENSE)
 
 ---

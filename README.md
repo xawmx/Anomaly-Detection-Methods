@@ -188,6 +188,6 @@ Free Use: No restrictions on the use of the source code.
 Commercial Use: Can be used in commercial projects.
 Attribution Required: The original license text must be included when distributing.
 Disclaimer: The author is not responsible for any issues caused by using this project.
-Click to view the full license text: LICENSE：[LICENSE](./LICENSE)
+Click to view the full license text: LICENSE：[LICENSE](LICENSE)
 
 ---
